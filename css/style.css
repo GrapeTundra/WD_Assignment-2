@@ -1,0 +1,352 @@
+/*All Pages*/
+body{
+    margin: 0px;
+}
+
+a{
+    text-decoration: underline;
+    color: black;
+}
+
+.inputButton{
+    background-color: black;
+    border: 0.1em solid black;
+    color: white;
+    width: 6em;
+    padding: 0.1em;
+    text-align: center;
+    border-radius: 0.5em;
+}
+
+img{
+        width: 25%;
+    }
+
+
+
+/*Header Elements, page title*/
+header{
+    text-align: center;
+    background-color: rgb(116, 116, 116);
+    margin-top: 0px;
+}
+
+header h1{
+    margin-bottom: 0;
+}
+header p{
+    color: rgb(51, 51, 51);
+    margin-top: 0;
+}
+
+
+/*Navigation elements */
+nav ul{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+ 
+}
+
+nav li{
+    flex: 1;
+}
+
+nav ul a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 0.2em;
+    border-right: 1px white solid;
+}
+
+
+#current{
+    background-color: white; 
+    color: black;
+}
+
+/*Form Elements*/
+
+.FormPageMain{
+    margin-left: 5em;
+    margin-right: 5em;
+    margin-top: 4em;
+    padding: 1em;
+}
+
+input, label{
+    margin: 0.5em;
+    margin-bottom: 1em;
+ 
+}
+
+
+/* Default CSS (desktop)*/
+
+/*Index*/
+#IndexBody{
+    background-color: rgb(43, 43, 43);
+}
+
+.IndexSec{
+    display: block;
+    background-color: rgb(168, 168, 168);
+    border-radius: 5px;
+ 
+    padding: 1em;
+    margin: 2em;
+    margin-top: 1em;
+}
+
+footer{
+    text-align: center;
+    border: 0.25em dotted black;
+    padding: 0.5em;
+}
+
+.caption{
+    background-color: rgb(168, 168, 168);
+    border-radius: 5px;
+    margin-left: 3em;
+    margin-right: 3em;
+    padding: 0.2em;
+}
+
+#FounderImg{
+        width: 15%; 
+    }
+
+
+/*Resturant Page*/
+#RestBody{
+    background-color: rgba(255, 241, 163, 0.781);
+}
+
+.collapse{
+    text-decoration: none;
+    color: darkgray;
+}
+
+#RestMain{
+    text-align: center;
+}
+
+#RestMain ul{
+    list-style: none;
+}
+
+.RestBox{
+    background-color: rgb(0, 119, 255);
+    margin: 1em;
+    border-radius: 0.1em;
+    padding: 0.01em;
+}
+
+.RestInfo{
+    background-color: rgb(0, 61, 194);
+    margin: 2em;
+    border-radius: 0.5em;
+    padding: 0.25em;
+}
+
+#RestFooter{
+    background-color: rgba(255, 241, 163, 0.781);
+    border: 0.25em solid black;
+}
+
+
+
+
+/*Recomend Page*/
+
+#RecBody{
+    background-color: rgb(26, 121, 40);
+}
+
+#RecFormPage{
+    background-color: rgb(19, 99, 19);
+}
+
+
+
+
+#recform{
+    border: 0.15em solid black;
+    padding: 0.5em;
+}
+
+/*Register Page*/
+
+#regBody{
+    background-color: rgb(43, 43, 43);
+}
+
+#RegFormPage{
+    background-color: rgb(216, 216, 216);
+}
+
+/*Reservation Page*/
+
+#resBody{
+    background-color: rgb(61, 15, 15);
+}
+
+#ResFormPage{
+    background-color: rgb(139, 30, 30);
+}
+
+
+/*both mobile and tablet adjustments*/
+
+@media (max-width: 1023px ) {
+    /*All Pages*/
+
+    nav{
+        font-size: 0.9em;
+    }
+
+
+    /*Form Elements*/
+
+    .FormPageMain{
+        margin-left: 0.25em;
+        margin-right: 0.25em;
+        margin-top: 1em;
+        padding: 0.5em;
+    }
+
+    input, label{
+        margin: 0;
+        margin-bottom: 2em;
+    
+    }
+
+    
+
+
+    /*Index*/
+    .IndexSec{
+        padding: 0.5em;
+        margin: 0.5em;
+        margin-top: 1.5em;
+    }
+
+    footer{
+        padding: 0.25em;
+        margin: 0.1em;
+    }
+
+    .caption{
+       margin: 0.1em; 
+    }
+
+
+    /*Resturant Page*/
+
+    .RestBox{
+
+        margin: 0.25em;
+        border-radius: 0.1em;
+        padding: 0.01em;
+    }
+
+    .RestInfo{
+
+        margin: 1em;
+        border-radius: 0.5em;
+        padding: 0.1em;
+    }
+
+
+
+
+    /*Recomend Page*/
+
+    #recform{
+        padding: 0.5em;
+        font-size: 0.75em;
+    }
+
+    /*Register Page*/
+
+    #regform{
+        font-size: 0.8em;
+        border: 0.1em solid black;
+    }
+
+    /*Reservation Page*/
+    #resform{
+        padding: 0.1em;
+        border: 0.1em solid black;
+        font-size: 0.8em ;
+    }
+
+}
+
+/* Tablet adjustments */
+@media (max-width: 1023px ) and (min-width:768px) {
+    /*All Pages*/
+    body{
+        font-size: 2em;
+    }
+
+
+    img{
+        width: 60%;
+    }
+
+    /*Form Elements*/
+
+    /*Index*/
+
+    #FounderImg{
+        width: 60%;
+    }
+
+    /*Resturant Page*/
+
+    
+    #RestFooter{
+        font-size: 0.6em;
+    }
+    /*Recomend Page*/
+
+    /*Register Page*/
+
+
+}
+
+/* Mobile adjustments */
+@media (max-width: 767px) {
+    /*All Pages*/
+    body{
+        font-size: 1.5em;
+    }
+
+    img{
+        width: 80%;
+    }
+
+    /*Form Elements*/
+    
+    /*Index*/
+
+    #FounderImg{
+        width: 40%;
+    }
+
+    /*Resturant Page*/
+    #RestFooter{
+        font-size: 0.7em;
+    }
+    /*Recomend Page*/
+
+    /*Register Page*/
+
+    /*Reservation Page*/
+
+}

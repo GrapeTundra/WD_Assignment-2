@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">	
+    <meta name="description" content="Web development">
+    <meta name="keywords" content="Assignment 2">
+    <meta name="author" content="Oscar Wright">
+
+    <!--Style Sheets-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--Scripts-->
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/script.js"></script>
+
+	<title>Resturants</title>
+</head>
+
+<body id="RestBody">
+      <header>
+            <h1>ORCA</h1>
+            <p>Oscar's Recomended Cuisine Array</p>
+      </header>  
+      <nav>
+            <ul>
+                <li><a href="index.html">Index</a></li>
+                <li><a href="resturants.html" id="current">Resturants</a></li>
+                <li><a href="recommend.html">Recommend</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="reservation.html">Reservation</a></li>
+
+            </ul>
+      </nav>
+      <main id="RestMain">
+            <!-- Collapsable area for the resturants for easier naviagtion of the page-->
+             <!--1st Resturant-->
+             <div class="RestBox">
+                  <div>
+                        <h2>
+                        <a href="#" class="collapse">[-]</a>
+                        <span class="ResHeading">Steve's Sandwiches</span>
+                        </h2>
+                  </div>
+                  <article  class='RestInfo'> 
+                        <h3>Cuisine:</h3>
+                        <p>Sandwiches, toasties, and burgers</p>
+                        <h3>Signature Dishes: </h3>
+                        <ul>
+                              <li>Ham and Cheese Sandwich:  $5</li>
+                              <li>Ham and Cheese Toastie: $5</li>
+                              <li>Cheesburger: $7</li>
+                              <li>Salad Supreme: $6  </li>
+                        </ul>
+                        <h3>Who are they?</h3>
+                        <p>Steve's Sandwiches is a local sandwhich store which prides itself on keeping itself affordable and accessible to all.
+                              Their menu really sticks to their slogan, "We're a figurehead for all things bread," With even their burger range using bread slices over burger buns to keep that sandwhich feel and look.
+                              According to an interview we had with their owner, Steve, they source all of their ingredients from local farms, which helps keeps their prices down, and keep them fresh.
+                        </p>
+                        <img src="images/StevesSandwich.jpeg" alt="A photo of one of Steve's sandwiches" >
+                        <h3>Pricing</h3>
+                        <p>Deposit Ammount: $0 </p>
+                        <p>Average Price per person: $10-15</p>
+                        <a href="reservation.html?restaurant=Steves%20Sandwiches" class="inputButton">Make a Reservation</a>
+                        
+                        
+                  </article>
+            </div>
+
+            <!--2nd Resturant-->
+            <div class="RestBox">
+                  <div>
+                        <h2>
+                        <a href="#" class="collapse">[-]</a>
+                        <span class="ResHeading">Bobs Breakfast</span>
+                        </h2>
+                  </div>
+                  <article class='RestInfo' >
+                        <h3>Cuisine:</h3>
+                        <p>Breakfast foods</p>
+                        <h3>Signature Dishes: </h3>
+                        <ul>
+                              <li>Hashbrowns: $4per</li>
+                              <li>Eggs benedict: $14</li>
+                              <li>Eggs, scrambled: $15</li>
+                              <li>Bob's Breakie combo: Toast, eggs your way, a hashbrown and a coffee : $20 </li>
+                        </ul>
+                        <h3>Who are they?</h3>
+                        <p>Bob's Breakfast is large chain of small resturants who specalise in breakfast based meals, offering both Brunch (breakfast lunch) and Brinner (breakfast dinner) as well, 
+                              allowing tons of availability throughout the day. They're generally on the pricier side compared to other resturants on this list, but the quality of the food is appropraite to the cost 
+                              so I can't help but praise them for it.</p>
+                        <img src="images/Bobsbreakfast.jpeg" alt="A photo from Bob's Breakfast's webpage" >
+                        <h3>Pricing</h3>
+                        <p>Deposit Ammount: $20 </p>
+                        <p>Average Price per person: $20-25 </p>
+                        <a href="reservation.html?restaurant=Bobs%20Breakfast" class="inputButton">Make a Reservation</a>
+                  </article>
+            </div>
+
+            <!--3rd Resturant-->
+            <div class="RestBox">
+                  <div>
+                        <h2>
+                        <a href="#" class="collapse">[-]</a>
+                        <span class="ResHeading">Pete's Pub Feed</span>
+                        </h2>
+                  </div>
+                  <article class='RestInfo' >
+                        <h3>Cuisine:</h3>
+                        <p>'pub feed', classic Aussie pub meals</p>
+                        <h3>Signature Dishes: </h3>
+                        <ul>
+                              <li>Parma: $10</li>
+                              <li>Signature Steak: $12</li>
+                              <li>Pete's perfect chips: S :$3, M: $6, L: $9</li>
+                        </ul>
+                        <h3>Who are they?</h3>
+                        <p>Pete's Pub Feed is a small pub that focuses on a classic australian pub feed. It does unfourtunately only open past 6, which does limit its conveinence and accessiblity,
+                              But the serving sizes never leave you on an empty stomach, and the quality is wortth well more then their affordable costs. The vibes and atmosphere is also always lively and enjoyable
+                        </p>
+                        <img src="images/PetesPubFeed.jpeg" alt="A shot from Pete's Pub Feed" >
+                        <h3>Pricing</h3>
+                        <p>Deposit Ammount: $0 </p>
+                        <p>Average Price per person: $15 - $20</p>
+
+                        <a href="reservation.html?restaurant=Petes%20Pub%20Feed" class="inputButton">Make a Reservation</a>
+                  </article>
+            </div>
+
+            <!--4th Resturant-->
+            <div class="RestBox">
+                  <div>
+                        <h2>
+                        <a href="#" class="collapse">[-]</a>
+                        <span class="ResHeading">Gary's Grilled meat</span>
+                        </h2>
+                  </div>
+                  <article class='RestInfo' >
+                        <h3>Cuisine:</h3>
+                        <p>Grilled meat</p>
+                        <h3>Signature Dishes: </h3>
+                        <ul>
+                              <li>Steak (grilled): $12</li>
+                              <li>grilled sausage fest: $13</li>
+                              <li>Lamb feast: $10</li>
+                              <li>Grilled chips: S :$3, M: $5, L: $10</li>
+                        </ul>
+                        <h3>Who are they?</h3>
+                        <p>Gary's Grilled Meat is a local grill resturant with an open kitchen floorplan, which creates an epic atmoshpere being able to smell and see the meat getting grilled in front of you. 
+                              It is a much smaller restruant which can cause it to be busy or just have no availability, but they have a low deposit ammount for reservations, so you just have to book in advanced. 
+                        </p>
+                        <img src="images/GarysGrilled.jpeg" alt="A photo from Gary's Webpage" >
+                        <h3>Pricing</h3>
+                        <p>Deposit Ammount: $5 </p>
+                        <p>Average Price per person: $15-$20 </p>
+                        <a href="reservation.html?restaurant=Garys%20Grilled%20Meat" class="inputButton">Make a Reservation</a>
+                  </article>
+            </div>
+
+            <!--5th Resturant-->
+            <div  class="RestBox">
+                  <div>
+                        <h2>
+                        <a href="#" class="collapse">[-]</a>
+                        <span class="ResHeading">Mary's Mexican</span>
+                        </h2>
+                  </div>
+                  <article class='RestInfo'>
+                        <h3>Cuisine:</h3>
+                        <p>Mexican</p>
+                        <h3>Signature Dishes: </h3>
+                        <ul>
+                              <li>Bean Burrito: $8 per</li>
+                              <li>Cheesy Corn Chips:S :$4, M: $8, L: $12 </li>
+                              <li>Quesadilla range: $8-12</li>
+                              <li>Taco range: $6-8 </li>
+                        </ul>
+                        <h3>Who are they?</h3>
+                        <p>Mary's Mexican is a resturant chain the specialises in Mexican food. Despite being a resturant chain each resturant is locally owned which keeps them having a small and persoanl feel
+                              which is a welcoming atmoshpere. The food is affordable and their large menu create a massive variety in food which allows almost anyone to find something they'd like.
+                        </p>
+                        <img src="images/MarysMexican.jpeg" alt="A photo of a meal from Mary's Mexican" >
+                        <h3>Pricing</h3>
+                        <p>Deposit Ammount: $3 </p>
+                        <p>Average Price per person: $8-15</p>
+                        <a href="reservation.html?restaurant=Marys%20Mexican" class="inputButton">Make a Reservation</a>
+                  </article>
+            </div>
+
+            <!--6th Resturant-->
+            <div class="RestBox">
+                  <div>
+                        <h2>
+                        <a href="#" class="collapse">[-]</a>
+                        <span class="ResHeading">Kevin's Kebabs</span>
+                        </h2>
+                  </div>
+                  <article class='RestInfo'>
+                        <h3>Cuisine:</h3>
+                        <p>Kebabs</p>
+                        <h3>Signature Dishes: </h3>
+                        <ul>
+                              <li>Kevin's Favourite kebab: $13</li>
+                              <li>HSP Range:$10 - 18 </li>
+                              <li>Kebab Range: $12 - 17</li>
+                        </ul>
+                        <h3>Who are they?</h3>
+                        <p>Kevin's Kebabs is a locally owned resturant which prides itself on its kebabs. They have a quite limited range, which obviously lowers their variety, 
+                              but if you enjoy kebabs, their kebabs are some of the best i've tried, they always have amazing customer service, and they always are quick to make your food.
+                              Luckily due to them being a locally owned place, they also are rarely completly filled out, ensuring you can always come in to eat when you feel.
+                        </p>
+                        <img src="images/Kevins.jpeg" alt="A photo from kevin's webpage" >
+                        <h3>Pricing</h3>
+                        <p>Deposit Ammount:$0 </p>
+                        <p>Average Price per person: $15-20</p>
+                        <a href="reservation.html?restaurant=Kevins%20Kebabs" class="inputButton">Make a Reservation</a>
+                  </article>
+            </div>
+      </main>
+      <footer id="RestFooter">
+            <p>All aforementioned resturants are not real and made purely for my web development assignment 2, any correlation to real resturants/places is pure coincidence</p>
+            <p>All Images used above are from <a href="https://stock.adobe.com/">Stock.adobe.com</a></p>
+      </footer>
+</body>
+</html>

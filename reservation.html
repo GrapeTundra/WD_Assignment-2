@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">	
+    <meta name="description" content="Web development">
+    <meta name="keywords" content="Assignment 2">
+    <meta name="author" content="Oscar Wright">
+
+    <!--CSS links-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--Scripts-->
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/ReservationScri.js"></script> <!--Seperate script for this page to check url to see i they came from recomendations and then prefilling, and being able to update deposit ammount immiediatly-->
+
+	<title>Reservation</title>
+</head>
+
+<body id="resBody">
+      <header>
+            <h1>ORCA</h1>
+            <p>Oscar's Recomended Cuisine Array</p>
+      </header>  
+      <nav>
+            <ul>
+                <li><a href="index.html">Index</a></li>
+                <li><a href="resturants.html">Resturants</a></li>
+                <li><a href="recommend.html">Recommend</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="reservation.html" id="current">Reservation</a></li>
+
+            </ul>
+      </nav>
+      <main id="ResFormPage" class="FormPageMain">
+
+            <!--Title and page information-->
+            <h2>Reservation</h2>
+            <p>Use our website to book a reservation at a resturant</p>
+
+            <form id="resform" method="post"
+		action="http://mercury.swin.edu.au/it000000/cos10005/regtest.php">
+
+                  <!--Full name input-->
+			<div class="textinput">
+				<label for="FullNameIn">Full name</label>
+				<input id="FullNameIn" type="text" name="FullName" >
+			</div>
+
+                   <!--Email input-->
+                  <div class="textinput">
+				<label for="EmailIn">Email</label>
+				<input id="EmailIn" type="text" name="Email" >
+			</div>
+
+                   <!--Phone number input-->
+                  <div class="numinput">
+				<label for="PhoneNumIn">Phone number</label>
+				<input id="PhoneNumIn" type="number" name="PhoneNum" >
+			</div>
+
+
+                   <!--Resturant Selection-->
+                  <div class="SelectInput">
+                        <label for="RestSelectIn">Select a Resturant:</label>
+                        <select name="RestSelect" id="RestSelectIn">
+                              <option value="" selected>Select here</option>
+                              <option value="Steves Sandwiches">Steve's Sandwiches</option>
+                              <option value="Bobs Breakfast">Bob's Breakfast</option>
+                              <option value="Petes Pub Feed">Pete's Pub Feed</option>
+                              <option value="Garys Grilled Meat">Gary's Grilled Meat</option>
+                              <option value="Marys Mexican">Mary's Mexican</option>
+                              <option value="Kevins Kebabs">Kevin's kebab</option>
+                        </select>
+                  </div>
+
+
+                  <!--Reservation date/Time-->
+                  <div class="DateInput">
+                        <label for="ResDateIn">Select Date:</label>
+                        <input type="date" id="ResDateIn" name="ResDate" >
+		      </div>
+
+                  <div class="TimeInput">
+                        <label for="ResTimeIn">Select Time:</label>
+                        <input type="time" id="ResTimeIn" name="ResTime" >
+		      </div>
+
+
+                   <!--Number of people input-->
+                  <div class="numinput">
+				<label for="NumPeopleIn">Number of People:</label>
+				<input id="NumPeopleIn" type="number" name="NumPeople" >
+			</div>
+
+                  <!--Special Request input-->
+                  <div class="textinput">
+				<label for="SpecReqIn">Special Requests (optional)</label>
+				<input id="SpecReqIn" type="text" name="SpecReq" >
+			</div>
+
+                  <!--Dynamically changing deposit ammount-->
+                  
+                  <p>Deposit Ammount: <span id="depositAmmount">Please Select a resturant</span></p>
+
+
+                   <!--Deposit Method-->
+			<div class="radioinput" id="DepoMethodIn">
+				<span class="radiolabel">Deposit Method</span>
+
+				<input id="VoucherIn" type="radio" name="DepoMethod" value="Voucher" >
+				<label for="VoucherIn">Voucher</label>
+
+				<input id="OnMethIn" type="radio" name="DepoMethod" value="OnlineMeth" >
+				<label for="OnMethIn">Online Payment</label>
+
+			</div>
+
+
+
+
+                  <!--Voucher selected-->
+                  <div class="textinput" id="VouchSelected">
+				<label for="VouchIn">Voucher Code</label>
+				<input id="VouchIn" type="text" name="VouchCode" maxlength="12" >
+			</div>
+
+                  <!--Online Method Selected-->
+                  <div class="textinput" id="OnMethSelected">
+				<label for="CredIn">Credit Card details</label>
+				<input id="CredIn" type="text" name="CredCardDet" maxlength="16">
+			</div>
+
+                  <!--Billing Email Adress-->
+                        <label for="BillAdd">Billing Address:</label>
+                              <!--Same as email address button-->
+                              <div class="checkboxInput">
+                              <label for="BillAddSameIn">Same as Email Address</label>
+                              <input type="checkbox" id="BillAddSameIn" name="BillaAddSame" value="True">
+                              </div>
+                              
+                              <!--Text input for Billing Adress-->
+                        <div class="textinput" >
+                              <input id="BillAdd" type="text" name="Billing Adress">
+                        </div>
+
+                  <div class="buttoninput">
+                        <input type="submit" value="Book" >
+                  </div>
+	      </form>
+
+      </main>
+ 
+</body>
+</html>

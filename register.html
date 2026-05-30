@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">	
+    <meta name="description" content="Web development">
+    <meta name="keywords" content="Assignment 2">
+    <meta name="author" content="Oscar Wright">
+
+
+    <!--StyleSheets-->
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <!--Scripts-->
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/script.js"></script>
+
+	<title>Register</title>
+</head>
+
+<body id="regBody">
+      <header>
+            <h1>ORCA</h1>
+            <p>Oscar's Recomended Cuisine Array</p>
+      </header>  
+      <nav>
+            <ul>
+                <li><a href="index.html">Index</a></li>
+                <li><a href="resturants.html">Resturants</a></li>
+                <li><a href="recommend.html">Recommend</a></li>
+                <li><a href="register.html" id="current">Register</a></li>
+                <li><a href="reservation.html">Reservation</a></li>
+
+            </ul>
+      </nav>
+
+      <!--main body of the page-->
+      <main id="RegFormPage" class="FormPageMain">
+            <!--Title and page information-->
+            <h2>Registration</h2>
+            <p>Wanna help us review websites, or get notified when we update our reviews? Register for an account with ORCA:</p>
+
+            <!--Form-->
+            <form id="regform" method="post"
+		action="http://mercury.swin.edu.au/it000000/cos10005/regtest.php">
+
+                  <!--User name input-->
+			<div class="textinput">
+				<label for="UnameIn">Username</label>
+				<input id="UnameIn" type="text" name="Uname" >
+			</div>
+
+                   <!--Email input-->
+                  <div class="textinput">
+				<label for="EmailIn">Email</label>
+				<input id="EmailIn" type="text" name="Email" >
+			</div>
+
+                   <!--Phone number input-->
+                  <div class="numinput">
+				<label for="PhoneNumIn">Phone number</label>
+				<input id="PhoneNumIn" type="number" name="PhoneNum" >
+			</div>
+
+                   <!--Password and confirm password-->
+			<div class="textinput">
+				<label for="pwd1">Password</label>
+				<input id="pwd1" type="password" name="pwd1" >
+			</div>
+
+			<div class="textinput">
+				<label for="pwd2">Retype Password</label>
+				<input id="pwd2" type="password" name="pwd2" >
+			</div>
+		
+                   <!--Gender-->
+			<div class="radioinput">
+				<span class="radiolabel">Gender</span>
+
+				<input id="genm" type="radio" name="gender" value="M" >
+				<label for="genm">Male</label>
+
+				<input id="genf" type="radio" name="gender" value="F" >
+				<label for="genf">Female</label>
+
+                        <input id="geno" type="radio" name="gender" value="O" >
+				<label for="geno">Other</label>
+			</div>
+
+                  <!--Diatry Preferences-->
+                  
+                  <div class="checkboxInput">
+                        <span class="checkLabel">Dietary preferences</span>
+
+                        <input type="checkbox" id="Veg" name="DiatryPref" value="Vegan">
+                        <label for="Veg">Vegan</label>
+
+                        <input type="checkbox" id="Vege" name="DiatryPref" value="Vegetarian">
+                        <label for="Vege">Vegetarian</label>
+
+                        <input type="checkbox" id="Hal" name="DiatryPref" value="Halal">
+                        <label for="Hal">Halal</label>
+
+                        <input type="checkbox" id="Non" name="DiatryPref" value="None">
+                        <label for="Non">None</label>
+                  </div>
+
+		      <!--Country/Region-->
+                  <div class="textinput">
+				<label for="LocationIn">Country/Region</label>
+				<input id="LocationIn" type="text" name="Location" >
+			</div>
+
+
+		<div class="buttoninput">
+			<input type="submit" value="Register" >
+		</div>
+	</form>
+
+      </main>
+
+</body>
+</html>

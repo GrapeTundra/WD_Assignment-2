@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">	
+    <meta name="description" content="Web development">
+    <meta name="keywords" content="Assignment 2">
+    <meta name="author" content="Oscar Wright">
+
+    <!--StyleSheets-->
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <!--Scripts-->
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/script.js"></script>
+
+	<title>Recommend</title>
+</head>
+
+<body id="RecBody">
+      
+      <header>
+            <h1>ORCA</h1>
+            <p>Oscar's Recomended Cuisine Array</p>
+      </header>  
+      <nav>
+            <ul>
+                <li><a href="index.html">Index</a></li>
+                <li><a href="resturants.html">Resturants</a></li>
+                <li><a href="recommend.html" id="current">Recommend</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="reservation.html">Reservation</a></li>
+
+            </ul>
+      </nav>
+      <main id="RecFormPage" class="FormPageMain">
+             <!--Title and page information-->
+            <h2>Recommendations</h2>
+            <p>Input some preferences/requirements and we'll give you some recomendations based on our reviewed websites. Click on the resturant to go to our reservation page to book a reservation</p>
+
+             <form id="recform" method="post"
+		action="http://mercury.swin.edu.au/it000000/cos10005/regtest.php">
+
+		
+                   <!--Budget Range-->
+			<div class="radioinput">
+				<span class="radiolabel">Budget Range (per person):</span>
+
+				<input id="1015in" type="radio" name="BudgetRange" value="1015" >
+				<label for="1015in">$10-15</label>
+
+				<input id="1520in" type="radio" name="BudgetRange" value="1520" >
+				<label for="1520in">$15-20</label>
+
+                        <input id="20in" type="radio" name="BudgetRange" value="20" >
+				<label for="20in">$20+</label>
+			</div>
+
+                  <!--Dining Purpose-->
+			<div class="radioinput">
+				<span class="radiolabel">Dining Purpose:</span>
+
+				<input id="ProfIn" type="radio" name="DinePurp" value="Prof" >
+				<label for="ProfIn">Professional</label>
+
+				<input id="FamilyIn" type="radio" name="DinePurp" value="Fam" >
+				<label for="FamilyIn">Family</label>
+
+                        <input id="DateIn" type="radio" name="DinePurp" value="Date" >
+				<label for="DateIn">Date</label>
+
+                        <input id="oth" type="radio" name="DinePurp" value="Oth" >
+				<label for="oth">Other</label>
+			</div>
+
+                  <!--Diatry Preferences-->
+                  
+                  <div class="checkboxInput">
+                        <span class="checkLabel">Diatry preferences</span>
+
+                        <input type="checkbox" id="Veg" name="DiatryPref" value="Vegan">
+                        <label for="Veg">Vegan</label>
+
+                        <input type="checkbox" id="Vege" name="DiatryPref" value="Vegetarian">
+                        <label for="Vege">Vegetarian</label>
+
+                        <input type="checkbox" id="Hal" name="DiatryPref" value="Halal">
+                        <label for="Hal">Halal</label>
+
+                        <input type="checkbox" id="Non" name="DiatryPref" value="None">
+                        <label for="Non">None</label>
+                  </div>
+
+		      
+
+
+		
+			<a href="#" id="RecomendBut" class="inputButton">Recommend</a>
+		
+	</form>
+
+      <H3>Recomendations: </H3>
+
+      <p id="RecomRests"></p>
+      </main>
+
+</body>
+</html>
