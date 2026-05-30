@@ -1,4 +1,4 @@
-Strcuture:
+Structure:
 Index; Home page, with info about the 'organisation'
 recommend; Recomendation page, that has a form to recomend websites
 register; allows user to register to the organisation
