@@ -1,16 +1,13 @@
-Strcuture:
+Structure:
 Index; Home page, with info about the 'organisation'
 recommend; Recomendation page, that has a form to recomend websites
 register; allows user to register to the organisation
 reservation; allows user to make a reservation for one of the 6 listed resturants
 resturants; has a list of 6 resturants with imgs
 
-Repo Link:
+Repo Link: https://github.com/GrapeTundra/WD_Assignment-2
 
 JS validation logic explanation:
-
-
-
 Reservation form validation:
 Checks that all inputs aren't blank
 Checks to see if the date isn't in the past, if it is, gives an error
